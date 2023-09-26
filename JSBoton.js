@@ -13,7 +13,7 @@ $(document).ready(function(){
     
 
     $('.up').click(function(){
-        $('body, php').animate({
+        $('body, html').animate({
             scrollTop: '0px'
         }, 100);
     });
