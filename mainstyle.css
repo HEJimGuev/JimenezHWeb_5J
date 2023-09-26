@@ -105,3 +105,10 @@
 	color: #ffffff;
 	cursor: pointer;
 	}
+.contenedor {
+		max-width: 1000px;
+		width: 90%;
+		margin: auto;
+		display: flex;
+		justify-content: space-between;
+	}
