@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" href = "mainstyle.css">
     <link rel = "stylesheet" href = "fontello.css">
-    <script src="JSBoton/main.js"></script>
     <title>Document</title>
 
 </head>
@@ -45,33 +44,41 @@
                         <legend class="form__legend">
                       FORMULARIO PEDIDOS</legend>
                         <fieldset  class="form__fieldset">
-                          <div class="form__row">
-                            <label class="form__label" for="name">Nombre(s)</label>
-                            <input class="form__textinput"  name="name" id="name" type="text" required autofocus>
+			  <div class="form__row">
+                            <label class="form__label" for="name">ID PEDIDO</label>
+                            <input class="form__textinput"  name="idp" id="idp" type="number" required autofocus>
                           </div>
                           <div class="form__row">
-                            <label class="form__label" for="app">Apellido Paterno</label>
-                            <input class="form__textinput"  name="app" id="app" type="text" required autofocus>
+                            <label class="form__label" for="name">ID CLIENTE</label>
+                            <input class="form__textinput"  name="idc" id="idc" type="number" required autofocus>
                           </div>
                           <div class="form__row">
-                            <label class="form__label" for="apm">Apellido Materno</label>
-                            <input class="form__textinput"  name="apm" id="apm" type="text" required autofocus>
+                            <label class="form__label" for="app">Nombre del Cliente</label>
+                            <input class="form__textinput"  name="nomc" id="nomc" type="text" required autofocus>
                           </div>
                           <div class="form__row">
-                            <label class="form__label" for="fnac"> Fecha de Nacimiento</label>
-                            <input class="form__textinput" name="fnac" id="fnac"  type="date"  required>
+                            <label class="form__label" for="apm">Fecha del Pedido</label>
+                            <input class="form__textinput"  name="fechap" id="fechap" type="date" required autofocus>
+                          </div>
+                          <div class="form__row">
+                            <label class="form__label" for="fnac"> ID PRODUCTO </label>
+                            <input class="form__textinput" name="idprod" id="idprod"  type="numer"  required>
                         </div>
-                          <div class="form__row">
-                              <label class="form__label" for="email"> Correo Electronico</label>
-                              <input class="form__textinput" name="email" id="email"  type="email"  required>
-                          </div>
-                          <div class="form__row">
-                            <label class="form__label" for="tel">Numero de Telefono</label>
-                            <input class="form__textinput"  name="tel" id="tel" type="text" required autofocus>
-                          </div>
-                          <div class="form__row">
+                         <div class="form__row">
                             <label class="form__label" for="direccion">Direccion</label>
                             <textarea class="form__textarea" name="direccion" id="direccion"  required ></textarea>
+                          </div>
+                          <div class="form__row">
+                            <label class="form__label" for="tel">Tipo Pago</label>
+                            <input class="form__textinput"  name="tipopago" id="tipopago" type="text" required autofocus>
+                          </div>
+                          <div class="form__row">
+                            <label class="form__label" for="direccion">Telefono</label>
+                            <textarea class="form__textarea" name="tel" id="tel" type="text" required ></textarea>
+                          </div>
+			 <div class="form__row">
+                            <label class="form__label" for="direccion">total</label>
+                            <textarea class="form__textarea" name="total" id="total" type="text" required ></textarea>
                           </div>
                             <button class="form__submit" name="submit" type="submit" id="contact-submit" >Enviar</button>
                               </fieldset>
@@ -79,9 +86,7 @@
     </div>
     </div>
 </main>
-<div class="up">
-    <span class="icon icon-up-dir"></span>
-    </div>
+
     <footer>
         <center>
             <p><br>Haydee Esmeralda Jimenez Guevara 5°J</p>
