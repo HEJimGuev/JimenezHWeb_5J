@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" href = "mainstyle.css">
     <link rel = "stylesheet" href = "fontello.css">
-    <script src="JSBoton/main.js"></script>
+    
     <title>Document</title>
 
 </head>
@@ -15,9 +15,11 @@
 	<br><br><br>
 	<div class="text-box">
         <a href="index.html" class="btn btn-white btn-animated">Inicio</a>
-		<a href="index.html#mision" class="btn btn-white btn-animated">Mision</a>
-        <a href="index.html#vision" class="btn btn-white btn-animated">Vision</a>
-        <a href="index.html#ubicacion" class="btn btn-white btn-animated">Ubicacion</a>
+	<a href="mision.html" class="btn btn-white btn-animated">Mision</a>
+        <a href="vision.html" class="btn btn-white btn-animated">Vision</a>
+        <a href="ubicacion.html" class="btn btn-white btn-animated">Ubicacion</a>
+	<a href="webmaster.html" class="btn btn-white btn-animated">Web Master</a>
+
 	</div>
 </header>
     <main id="blog">
@@ -45,33 +47,37 @@
                         <legend class="form__legend">
                       FORMULARIO PROVEEDORES</legend>
                         <fieldset  class="form__fieldset">
-                          <div class="form__row">
-                            <label class="form__label" for="name">Nombre(s)</label>
-                            <input class="form__textinput"  name="name" id="name" type="text" required autofocus>
+			  <div class="form__row">
+                            <label class="form__label" for="name">ID PROVEEDOR</label>
+                            <input class="form__textinput"  name="idprov" id="idprov" type="number" required autofocus>
                           </div>
                           <div class="form__row">
-                            <label class="form__label" for="app">Apellido Paterno</label>
-                            <input class="form__textinput"  name="app" id="app" type="text" required autofocus>
+                            <label class="form__label" for="name">Nombre Proveedor</label>
+                            <input class="form__textinput"  name="nomprov" id="nomprov" type="text" required autofocus>
                           </div>
                           <div class="form__row">
-                            <label class="form__label" for="apm">Apellido Materno</label>
-                            <input class="form__textinput"  name="apm" id="apm" type="text" required autofocus>
+                            <label class="form__label" for="app">Direccion</label>
+                            <input class="form__textinput"  name="direccionprov" id="direccionprov" type="text" required autofocus>
                           </div>
                           <div class="form__row">
-                            <label class="form__label" for="fnac"> Fecha de Nacimiento</label>
-                            <input class="form__textinput" name="fnac" id="fnac"  type="date"  required>
-                        </div>
+                            <label class="form__label" for="apm"> Telefono </label>
+                            <input class="form__textinput"  name="telprov" id="telprov" type="text" required autofocus>
+                          </div>
                           <div class="form__row">
                               <label class="form__label" for="email"> Correo Electronico</label>
                               <input class="form__textinput" name="email" id="email"  type="email"  required>
                           </div>
                           <div class="form__row">
-                            <label class="form__label" for="tel">Numero de Telefono</label>
-                            <input class="form__textinput"  name="tel" id="tel" type="text" required autofocus>
+                            <label class="form__label" for="tel">Codigo Postal</label>
+                            <input class="form__textinput"  name="cpostalprov" id="cpostalprov" type="text" required autofocus>
                           </div>
                           <div class="form__row">
-                            <label class="form__label" for="direccion">Direccion</label>
-                            <textarea class="form__textarea" name="direccion" id="direccion"  required ></textarea>
+                            <label class="form__label" for="direccion">Producto</label>
+                            <textarea class="form__textarea" name="producto" id="producto"  required ></textarea>
+                          </div>
+				<div class="form__row">
+                            <label class="form__label" for="direccion">Precio Producto</label>
+                            <textarea class="form__textarea" name="precioprod" id="precioprod" type="text" required ></textarea>
                           </div>
                             <button class="form__submit" name="submit" type="submit" id="contact-submit" >Enviar</button>
                               </fieldset>
@@ -79,9 +85,7 @@
     </div>
     </div>
 </main>
-<div class="up">
-    <span class="icon icon-up-dir"></span>
-    </div>
+
     <footer>
         <center>
             <p><br>Haydee Esmeralda Jimenez Guevara 5°J</p>
