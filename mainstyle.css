@@ -95,6 +95,7 @@
   	color: #000000;
 	font-size: 14px;
 }
+
 .up{
 	z-index: 1000;
 	position: sticky;
@@ -200,3 +201,64 @@
 			margin: 40 0 0 0;
 		}
 	}
+	/* * ====== FIN MEDIA QUERIES ========= */
+
+	/* * ====== FORMULARIOS ========= */
+
+	.form__fieldset{
+		max-width: 1300px;
+	   }
+	  /*titulo*/
+	  .form__legend {
+		font-weight: bold;
+		font-size: 18px;
+		color: black;
+	  }
+	  /*igualar texto y cajas*/
+	  .form__row {
+		margin-bottom: 0.2em;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		
+	  }
+	  /*cajas*/
+	  .form__label {
+		display: block;
+		font-weight: bold;
+		font-size: 18px;
+		color: black;
+		flex: 1 0 240px;
+		max-width: 800px;
+	  }
+	  
+	  /*tamaño= cajas*/
+	  .form__textinput, .form__textarea {  
+		flex: 1 0 250px;
+		max-width: 450px;
+		box-sizing: border-box;
+		
+		}
+	  
+	  /*Borde cajas*/
+	  .form__textinput:focus:invalid,
+	  .form__textarea:focus:invalid {
+		  border: 2px solid rgb(255, 0, 0);
+		font-size: 18px;
+		color: black;
+	  }
+	  /*Borde cajas ya contestadas*/
+	   .form__textinput:valid ,
+	   .form__textinput:focus:valid ,
+	  .form__textarea:valid ,
+	  .form__textarea:focus:valid  {
+		border: 2px solid green;
+		font-size: 15px;
+		color: black;
+	  }
+	  
+	  .form__textarea {
+		height: 50px;
+		
+	   }
+	   /* * ====== FIN FORMULARIOS ========= */
